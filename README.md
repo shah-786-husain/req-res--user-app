@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+ ## Reqres User Management App
+ A React application that integrates with the Reqres API to perform user authentication, listing, editing, and deletion.
+ ## Features
+ User Authentication (Login)
+ Fetch and Display Users (with Pagination)
+ Edit User Details
+ Delete User
+ Error Handling & Validation
+ Token Persistence using Local Storage
+ Responsive UI with Tailwind CSS
+ ## Tech Stack
+ Frontend: React, React Router
+ HTTP Requests: Axios
+ Styling: Tailwind CSS
+ State Management: React Hooks (useState, useEffect)
+ Persistence: LocalStorage
+ ## Folder Structure
+ /reqres-app
+│── /src
+│   ├── /components
+│   │   ├── Login.js
+│   │   ├── UserList.js
+│   │   ├── EditUser.js
+│   ├── /services
+│   │   ├── api.js
+│   ├── App.js
+│   ├── index.js
+│── package.json
+│── README.md
+## Installation & Setup
+1. Clone the Repository
+git clone https://github.com/your-username/reqres-user-management.git
+cd reqres-user-management
+2.Install Dependencies
+npm install
+3.Start the Application
+npm start
+Runs the app on http://localhost:3000/
+## API Endpoints Used
+Login: POST /api/login
+Get Users (Paginated): GET /api/users?page=1
+Update User: PUT /api/users/{id}
+Delete User: DELETE /api/users/{id}
+)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How It Works
+1.User logs in with email: eve.holt@reqres.in and password: cityslicka.
+2.On success, the token is stored in LocalStorage and the user is redirected to the User List Page.
+3.Users are displayed in a table with pagination.
+4.Users can be edited or deleted.
+## Bonus Features
+1.Client-side search & filtering
+2.Hosted on https://userapplicationabcd.netlify.app/
+3.React Router Navigation
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
